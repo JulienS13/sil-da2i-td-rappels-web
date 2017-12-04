@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+li{
+list-style-type: none;
+}
+
+footer {
+	text-align: center;
+	color :grey;
+	padding-top: 20px;
+}
+
+
+
+ /*index*/
+
+
+#t_principal {
+	color: green;
+	text-align: center;
+}
+
+h2{
+	color:green;
+}
+
+#inf_acteurs{
+	text-align: center;
+}
+
+#inf_real{
+	text-align: center;
+}
+
+#imageslegendees{
+	text-align: center;
+	padding-top: 10px;
+}
+
+#film{
+	text-align: justify;
+	text-align: left;
+	padding-left:20px;
+}
+
+/*realisateur*/
+
+#realisateur{
+	text-align: justify;
+	text-align: left;
+
+}
+
+
+
+
+
+/*responsive*/
+
+@media all and (max-width: 480px){
+
+#
+
+}
