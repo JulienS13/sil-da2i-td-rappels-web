@@ -44,7 +44,6 @@ CREATE TABLE movieHasPerson (
   idMovie int NOT NULL DEFAULT 0,
   idPerson int(11) NOT NULL DEFAULT 0,
   role varchar(255) DEFAULT NULL,
-  PRIMARY KEY (idMovie),
   FOREIGN KEY (idMovie) REFERENCES movie(id),
   FOREIGN KEY (idPerson) REFERENCES person(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

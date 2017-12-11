@@ -1,3 +1,15 @@
+
+<?php require_once ('function.php');
+if (!empty($_GET['personId'])) {
+    $personId = (int)$_GET['personId'];
+} else {
+    header("HTTP/1.0 404 Not Found");
+    echo '<h1>404 Not Found</h1>';
+    die;
+}
+$data = array();
+?>
+
 <!doctype html>
 <html lang="en"> 
 	<head>
@@ -8,7 +20,6 @@
 	</head>
 
 	<body>
-		<header>
 			<title>Alien : Le huitième passager</title>
 
 			<nav class="navbar navbar-default">
@@ -24,8 +35,9 @@
   				</div>
 			</nav>
 
-		</header>
-
-		<footer>Julien Sorelli</footer>
+			<?php getBlock("includes/infos_actors.php", ['person' => $personId]); ?>
+		
 	</body>
+
+	<footer>Julien Sorelli</footer>
 </html>
